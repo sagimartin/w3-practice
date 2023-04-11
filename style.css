@@ -1,0 +1,65 @@
+body {
+    font: 1em Tahoma, sans-serif;
+    background-color: #fff;
+    color: #333;
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.box {
+	padding: 10px;
+    border: 5px solid rgb(17, 105, 121);
+    background-color: rgb(1, 19, 121, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    /* height: 400px; */
+    
+
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+    /* float: left;
+    margin-right: 10px; */
+}
+
+/* .second{
+    clear: left;
+}  */
+
+/* A float-rol ennyi eleg is  */
+
+
+/* Milyen positiont lehet adni egy block level elementnek? div p h stb */
+/* Alapbol position: static */
+
+.wrapper{
+    position: relative;
+    border: 1px solid #333;
+}
+
+nav ul{
+    /* Ez nem mutatja a pottyoket - menube nem kell */
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    /* Padding az gyujto. ha 1 erteket adunk meg akkor ugy veszi hogy mindegyik annyi */
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 20px;
+    /* Ha 2 erteket adunk meg akkor TOP-BUTTOM és RIGHT-LEFT */
+    color: #fff;
+}
+
+nav{
+    background-color: #333;
+    width: 100%;
+    margin: 0;
+
+    position: sticky;
+    top: 0;
+}
+
+/* Irjunk cheat-sheetet */
