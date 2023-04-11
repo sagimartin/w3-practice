@@ -1,0 +1,114 @@
+h2 {
+    font-size: 30px;
+    color: green;
+  }
+  /* class szelektor */
+  .blue-text {
+    color: blue;
+  }
+  
+  #main-heading {
+    font-size: 84px;
+  }
+  
+  /* Kombinalt szelektor */
+  /* Ebben a példában a "p" elemet választjuk ki, amelynek az osztálya "blue-text", és a szöveg színét kék színűre állítjuk. */
+  p.blue-text {
+    text-decoration: underline;
+  }
+  /* Ebben a példában az összes "button" osztályú elemre alkalmazzuk a színeket, amelyek az "section" osztályon belül találhatók. */
+  section button {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Az "ul li" szelektor kiválasztja az összes "li" elemet, amelyek egy "ul" elem alatt vannak. */
+  ul li {
+    list-style-type: square;
+  }
+  .sel2 {
+    background-color: blue;
+  }
+  .sel1 {
+    background-color: green;
+  }
+  
+  /* Azokat választja ki amelyek mindkét stílust tartalmazzák */
+  .sel1.sel2 {
+    background-color: yellow;
+  }
+  
+  /* Csak a közvetlen leszármozottját jelöki ki */
+  .parent > .child {
+    /*   background-color: green; */
+  }
+  /* Minden child nevű osztály elemet kiválaszt */
+  .parent .child {
+    /* background-color: green; */
+  }
+  /* Közvetlen testvér szelektor */
+  div + p {
+    /*   background-color: red; */
+  }
+  
+  /* Általános testvér szelektor */
+  /* div ~ p {
+    background-color: orange;
+  } */
+  
+  /* PSEUDO CLASS */
+  /* unvisited link */
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: purple;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    background-color: black;
+  }
+  
+  /* Selects the second li element in a list */
+  li:nth-child(3) {
+    background: lightgreen;
+  }
+  li:nth-last-child(2) {
+    background: red;
+  }
+  
+  /* PSEUDO ELEMENT */
+  /* ::before ::after
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_before
+  */
+
+  /* p::first-letter {
+    color: green;
+    font-size: xx-large;
+  } */
+  
+  /* ATTRIBUTE SELECTOR  */
+  /* https://www.w3schools.com/css/css_attribute_selectors.asp */
+  
+  input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+  }
+  input[type="password"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: green;
+  }
+  
+  input[type="button"] {
+    width: 120px;
+    margin-left: 15px;
+    display: block;
+  }
+  
