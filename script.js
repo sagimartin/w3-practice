@@ -48,3 +48,61 @@ console.log(myFirstFunction("Márk ", "AG"));
 // Még if/else, objectum, iterator
 
 // Atnezni conditional es operatorok + for loopok W3schools
+
+
+
+
+
+
+
+
+
+
+
+
+// 2023.04.13
+const cond1 = 2
+const cond2 = 2
+
+// vagy raksz ; vagy nem - mindegy
+// fuggvenyen belul barmit tehetunk, belul marad amig nem return-oljuk
+// a function-el deklarátuk és adtunk neki erteket
+function doubleTheNumber(num) {
+    let result = num*2
+    return result
+}
+// eddig tart a fuggveny
+
+
+// a zárójel azt jelenti, hogy oda varunk (rendelunk) egy értéket
+const doubleNumber = doubleTheNumber(7)
+console.log(doubleNumber)
+console.log(doubleTheNumber(17));
+
+
+// deklaráljunk egy függvényt
+function score(letter) {
+    const scoreStr = "a"
+    if (scoreStr === letter) {  
+        return true
+    }else{
+            return false
+        }
+    }
+
+console.log(score("b"));
+
+// az if () ben mindig kell egy feltetel ami evalualodik
+// ha ugyanaz a betu, akkor true, ha nem akk false 
+// node script.js -el kell futtatni
+
+function score(letter) {
+    const scoreStr = "a"
+    if (letter === undefined) {  
+        return "failed to send me letter!"
+    }else if (scoreStr === letter){
+        return "Try again!"
+        }
+    }
+
+console.log(score());
